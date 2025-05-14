@@ -1,0 +1,73 @@
+* {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --color1: #f8d7da;
+  --color2: #edf2f6;
+  --color3: #80725f;
+  --color4: rgb(149, 83, 149);
+}
+
+#navbar {
+  background-color: var(--color1) !important;
+}
+
+.nav-item a {
+  font-weight: bold;
+}
+
+#heroImg {
+  height: 80vh;
+}
+
+#heroTxt h1 {
+  color: var(--color4);
+}
+
+#heroBtn {
+  background-color: var(--color4);
+  border: 0;
+}
+
+#about {
+  background-color: var(--color1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+#contact {
+  background-color: var(--color1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+#contactBtn {
+  background-color: var(--color4);
+  color: var(--color2);
+}
+
+.counter-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.counter {
+  font-size: 48px;
+  font-weight: bold;
+  color: var(--color4);
+}
+
+footer {
+  background-color: var(--color1);
+}
+
+footer a:hover {
+  text-decoration: underline;
+  color: #ffc107; /* Bootstrap warning color */
+}
+
+@media (max-width: 745px) {
+  #heroImg {
+    height: 50vh;
+    width: 100%;
+  }
+}
