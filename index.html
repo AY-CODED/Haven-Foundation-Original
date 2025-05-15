@@ -10,6 +10,7 @@
       integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
       crossorigin="anonymous"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="./static/css/style.css" />
     <link
       rel="shortcut icon"
@@ -163,7 +164,7 @@
         </div>
       </div>
       <a name="about"></a>
-      <div class="container text-center mt-5 p-4 rounded-3" id="about">
+      <div class="container text-center mt-5 p-4 rounded-3" id="about" data-aos="flip-left">
         <div class="col-12">
           <h1 class="mb-4">About Us</h1>
           <p>
@@ -212,7 +213,7 @@
       </div>
 
       <a name="contact"></a>
-      <div class="container mt-5 mb-5 p-4 rounded-3" id="contact">
+      <div class="container mt-5 mb-5 p-4 rounded-3" id="contact" data-aos="flip-left">
         <div class="row">
           <div class="col-12 text-center mb-4">
             <h2 class="text-dark">Contact Us</h2>
@@ -268,7 +269,9 @@
                 <div class="col-12 text-center">
                   <br />
                   <i class="fa-brands fa-instagram fa-2xl"></i> :
-                  <a href="http://instagram.com" class="text-dark">@young.mothershaven</a>
+                  <a href="http://instagram.com" class="text-dark"
+                    >@young.mothershaven</a
+                  >
                 </div>
                 <div class="col-12 text-center">
                   <br />
@@ -285,7 +288,7 @@
 
       <!-- GALLERY SECTION -->
       <a name="gallery"></a>
-      <section id="gallery" class="mt-5 mb-5">
+      <section id="gallery" class="mt-5 mb-5" data-aos="flip-down">
         <div class="container">
           <div class="text-center mb-4">
             <h2>Our Gallery</h2>
@@ -488,5 +491,9 @@
       src="https://kit.fontawesome.com/e5011a2023.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
