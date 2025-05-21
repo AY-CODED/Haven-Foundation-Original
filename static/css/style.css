@@ -1,73 +1,58 @@
-* {
-  scroll-behavior: smooth;
-}
-
 :root {
-  --color1: #C8A2C8;
-  --color2: #edf2f6;
-  --color3: #80725f;
-  --color4: rgb(149, 83, 149);
+  --bgColor: #c8a2c9;
+  --color: white;
 }
 
-#navbar {
-  background-color: var(--color1) !important;
+#navBar {
+  background-color: var(--bgColor);
 }
 
-.nav-item a {
-  font-weight: bold;
+#navItems {
+  color: var(--color);
+}
+
+#navList a {
+  color: var(--color);
+
+  &:hover {
+    font-weight: bolder;
+  }
 }
 
 #heroImg {
-  height: 80vh;
-}
-
-#heroTxt h1 {
-  color: var(--color4);
+  height: 28rem;
+  width: 100%;
 }
 
 #heroBtn {
-  background-color: var(--color4);
-  border: 0;
+  background-color: var(--bgColor);
+  color: var(--color);
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  font-size: 1.2rem;
 }
 
-#about {
-  background-color: var(--color1);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+#aboutUs,
+#contactUs {
+  background-color: var(--bgColor);
+  color: var(--color);
+  padding: 2rem;
+  border-radius: 0.5rem;
+  border: 4px solid white; /* <-- visible separator */
 }
 
-#contact {
-  background-color: var(--color1);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+#heroText h1 {
+  color: var(--bgColor);
+  font-size: 2rem;
+  font-weight: bolder;
 }
 
-#contactBtn {
-  background-color: var(--color4);
-  color: var(--color2);
+#storyText {
+  color: var(--bgColor);
+  font-size: 1.5rem;
+  font-weight: bolder;
 }
 
-.counter-container {
-  text-align: center;
-  padding: 20px;
-}
-
-.counter {
-  font-size: 48px;
-  font-weight: bold;
-  color: var(--color4);
-}
-
-footer {
-  background-color: var(--color1);
-}
-
-footer a:hover {
-  text-decoration: underline;
-  color: #ffc107; /* Bootstrap warning color */
-}
-
-@media (max-width: 745px) {
-  #heroImg {
-    height: 50vh;
-    width: 100%;
-  }
+#footer {
+  background-color: var(--bgColor);
 }

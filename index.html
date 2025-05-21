@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Young Women & Child Haven Foundation</title>
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="./static/css/style.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -11,18 +12,12 @@
       crossorigin="anonymous"
     />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <link rel="stylesheet" href="./static/css/style.css" />
-    <link
-      rel="shortcut icon"
-      href="./static/images/Logo.png"
-      type="image/x-icon"
-    />
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary" id="navbar">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="index.html"
-          ><img src="./static/images/Logo.png" height="55" alt=""
+    <nav class="navbar navbar-expand-lg" id="navBar">
+      <div class="container-fluid" id="navItems">
+        <a class="navbar-brand" href="#"
+          ><img src="./static/images/Logo.png" alt="" width="100"
         /></a>
         <button
           class="navbar-toggler"
@@ -36,459 +31,647 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-3">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-center" id="navList">
             <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
+              <a class="nav-link" href="#">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
+              <a class="nav-link" href="#">Contact</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#gallery">Gallery</a>
+              <a class="nav-link" href="#">Story</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Gallery</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-    <main>
-      <div class="container">
-        <div class="row d-flex">
-          <div class="col-12 col-lg-6 mt-3 p-5" id="heroTxt">
-            <h1>Small changes make a big impact on children lives</h1>
-            <p>
-              Empowering the Future, One Life at a Time The Young Women & Child
-              Haven Foundation is a nonprofit organization dedicated to
-              protecting, uplifting, and empowering vulnerable young women and
-              children. Our foundation was born from a deep desire to create a
-              safe, nurturing environment where hope is restored, dignity is
-              preserved, and potential is unlocked.
-            </p>
-            <!-- Button trigger modal -->
+
+    <div class="container">
+      <div class="row d-flex justify-content-center">
+        <div class="col-12 col-lg-6 mt-4" id="heroText" data-aos="zoom-in">
+          <h1>Small changes make a big impact on children lives</h1>
+          <p>
+            Empowering the Future, One Life at a Time The Young Women & Child
+            Haven Foundation is a nonprofit organization dedicated to
+            protecting, uplifting, and empowering vulnerable young women and
+            children. Our foundation was born from a deep desire to create a
+            safe, nurturing environment where hope is restored, dignity is
+            preserved, and potential is unlocked.
+          </p>
+          <!-- Button trigger modal -->
+          <div class="d-flex">
             <button
               type="button"
-              class="btn btn-primary"
+              class="btn"
               data-bs-toggle="modal"
-              data-bs-target="#exampleModal"
+              data-bs-target="#heroModal"
               id="heroBtn"
             >
-              Learn more
+              Read More
             </button>
+          </div>
 
-            <!-- Modal -->
-            <div
-              class="modal fade"
-              id="exampleModal"
-              tabindex="-1"
-              aria-labelledby="exampleModalLabel"
-              aria-hidden="true"
-            >
-              <div class="modal-dialog modal-dialog-scrollable">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">
-                      Read More
-                    </h1>
-                    <button
-                      type="button"
-                      class="btn-close"
-                      data-bs-dismiss="modal"
-                      aria-label="Close"
-                    ></button>
-                  </div>
-                  <div class="modal-body">
-                    <h1>Our Mission</h1>
-                    To provide shelter, education, and holistic support to young
-                    women and children facing adversity, with the aim of
-                    breaking cycles of poverty, abuse, and neglect.
-                    <h1>What We Do</h1>
-                    Safe Haven & Shelter: We provide a secure, welcoming home
-                    for those who have been displaced, orphaned, or are escaping
-                    harmful environments. Education & Skill Building: Through
-                    academic programs, vocational training, and mentorship, we
-                    equip young women and children with the tools they need for
-                    a brighter future. Health & Wellness: We offer access to
-                    healthcare, counseling, and nutrition programs to promote
-                    physical and emotional well-being. Advocacy & Awareness: We
-                    raise awareness about the rights of women and children and
-                    work toward systemic change in communities.
-                    <h1>Our Vision</h1>
-                    A world where every young woman and child has the
-                    opportunity to live in safety, receive a quality education,
-                    and grow into confident, self-reliant individuals.
-                    <h1>Get Involved</h1>
-                    Whether you're looking to volunteer, donate, or simply
-                    spread the word, your support helps us change lives every
-                    day. Together, we can be the voice, the shelter, and the
-                    strength that these young individuals need.
-                  </div>
-                  <div class="modal-footer">
-                    <button
-                      type="button"
-                      class="btn btn-secondary"
-                      data-bs-dismiss="modal"
-                    >
-                      Close
-                    </button>
-                  </div>
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="heroModal"
+            tabindex="-1"
+            aria-labelledby="heroModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="heroModalLabel">
+                    Our Mission
+                  </h1>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <p>Empowering the Future, One Life at a Time</p>
+                  <p>
+                    The Young Women & Child Haven Foundation is a nonprofit
+                    organization dedicated to protecting, uplifting, and
+                    empowering vulnerable young women and children. Our
+                    foundation was born from a deep desire to create a safe,
+                    nurturing environment where hope is restored, dignity is
+                    preserved, and potential is unlocked.
+                  </p>
+                  <p>
+                    We believe every child and young woman deserves a chance to
+                    thrive, regardless of their circumstances. Through our
+                    programs, we provide education, healthcare, mentorship, and
+                    life skills training to help them build brighter futures.
+                  </p>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                  <button type="button" class="btn btn-primary">
+                    Learn More
+                  </button>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-12 col-lg-6 mt-4">
+        </div>
+        <div class="col-12 col-lg-6 mt-3 d-flex justify-content-center">
+          <img
+            src="./static/images/img9.jpg"
+            class="rounded-3 img-fluid mx-auto-mobile"
+            id="heroImg"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="container mt-4">
+      <div class="row g-3 justify-content-center">
+        <!-- Use Bootstrap grid gutter here -->
+        <div
+          class="col-12 col-lg-6 mt-4 text-center-mobile"
+          id="aboutUs"
+          data-aos="flip-up"
+        >
+          <h1 class="text-center-mobile">About Us</h1>
+          <p class="text-center-mobile">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum
+            minima, odit magni accusantium aut quo perferendis voluptatem animi
+            asperiores eveniet reprehenderit nisi libero, quae quam iure vitae!
+            Fugit, magnam modi! Enim porro est doloremque unde. Reprehenderit,
+            eius, ipsam unde aspernatur officiis quasi fugit eaque maxime sunt
+            odio sed accusantium beatae, id incidunt dolore aperiam itaque? Sint
+            obcaecati maxime reiciendis aliquid?
+          </p>
+        </div>
+        <div
+          class="col-12 col-lg-6 mt-4 text-center-mobile"
+          id="contactUs"
+          data-aos="flip-right"
+        >
+          <h1 class="text-center-mobile">Contact Us</h1>
+          <p class="text-center-mobile">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Perspiciatis necessitatibus vitae illo laudantium ipsum molestias,
+            eligendi eos non iure amet voluptatum repellat quidem nostrum
+            dolorem, doloribus hic fuga aperiam vel. Velit, odit ab dicta
+            voluptatibus maiores iure quae, nihil nisi consequuntur earum odio.
+            Ullam odio harum mollitia qui illo cum doloremque. Quae, animi
+            perferendis iste tempora architecto voluptatibus ut quas.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row d-flex justify-content-center">
+        <div class="col-12 col-lg-4 mt-3 d-flex justify-content-center">
+          <div class="card mx-auto-mobile" style="width: 18rem">
             <img
-              src="./static/images/img3.jpg"
-              alt=""
-              class="img-fluid rounded-3 shadow"
-              id="heroImg"
+              src="./static/images/wolman2.jpg"
+              class="card-img-top"
+              alt="..."
             />
-          </div>
-        </div>
-      </div>
-      <div class="container">
-        <div class="row d-flex text-center">
-          <div class="col-12 col-lg-4">
-            <h2 class="counter">1,000</h2>
-            <p>Children Helped</p>
-          </div>
-          <div class="col-12 col-lg-4">
-            <h2 class="counter">100</h2>
-            <p>Collaboration</p>
-          </div>
-          <div class="col-12 col-lg-4">
-            <h2 class="counter">1,000</h2>
-            <p>Assisted</p>
-          </div>
-        </div>
-      </div>
-      <a name="about"></a>
-      <div class="container text-center mt-5 p-4 rounded-3" id="about" data-aos="flip-left">
-        <div class="col-12">
-          <h1 class="mb-4">About Us</h1>
-          <p>
-            <strong>Young Mother & Child Haven Foundation</strong> is a
-            faith-driven non-governmental organization committed to nurturing,
-            empowering, and educating young mothers, girls, and children.
-          </p>
-
-          <p>
-            We exist to offer
-            <strong>hope, healing, and holistic development</strong> to those
-            facing the challenges of early motherhood, unwanted pregnancies, and
-            lack of guidance. Our mission is to transform lives through
-            <strong
-              >spiritual support, emotional healing, life skills development,
-              and educational outreach</strong
-            >.
-          </p>
-
-          <p>
-            We believe every young mother and child deserves a safe space to
-            grow, thrive, and embrace a purposeful future. Through school
-            outreaches, community programs, mentorship, and faith-based
-            teachings, we address real issues affecting girls and young mothers
-            — from
-            <strong>sexual education and teenage pregnancy prevention</strong>
-            to <strong>mental health support and vocational training</strong>.
-          </p>
-
-          <p>
-            Our goal is to break cycles of
-            <strong>shame, abandonment, and ignorance</strong> by building a
-            community rooted in <strong>hope, love, and restoration</strong>.
-          </p>
-
-          <p>
-            At <strong>Young Mother & Child Haven Foundation</strong>, we see
-            <em>potential where others see problems</em>. We walk with every
-            girl and young mother, reminding them:
-            <strong
-              >You are not alone. You are loved. Your story can be
-              beautiful.</strong
-            >
-          </p>
-        </div>
-      </div>
-
-      <a name="contact"></a>
-      <div class="container mt-5 mb-5 p-4 rounded-3" id="contact" data-aos="flip-left">
-        <div class="row">
-          <div class="col-12 text-center mb-4">
-            <h2 class="text-dark">Contact Us</h2>
-            <p class="text-muted">
-              We’d love to hear from you. Send us a message and we'll get back
-              to you as soon as possible.
-            </p>
-          </div>
-          <div class="col-12 col-md-8 offset-md-2">
-            <form>
-              <div class="mb-3">
-                <label for="name" class="form-label">Full Name</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="name"
-                  placeholder="Enter your full name"
-                  required
-                />
-              </div>
-              <div class="mb-3">
-                <label for="email" class="form-label">Email Address</label>
-                <input
-                  type="email"
-                  class="form-control"
-                  id="email"
-                  placeholder="name@example.com"
-                  required
-                />
-              </div>
-              <div class="mb-3">
-                <label for="message" class="form-label">Your Message</label>
-                <textarea
-                  class="form-control"
-                  id="message"
-                  rows="4"
-                  placeholder="Type your message here..."
-                  required
-                ></textarea>
-              </div>
-              <div class="d-grid">
-                <button type="submit" class="btn" id="contactBtn">
-                  Send Message
+            <div class="card-body">
+              <h5 class="card-title">Mrs. Damilola Taiwo</h5>
+              <p class="card-text">
+                Damilola Taiwo is a dynamic and visionary entrepreneur,
+                passionate about making an impact in various fields.
+              </p>
+              <!-- Button trigger modal -->
+              <div class="d-flex">
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#damilolaModal"
+                >
+                  Read More
                 </button>
               </div>
-            </form>
 
-            <div class="container mt-5 text-center">
-              <div class="row">
-                <h1 class="text-dark">
-                  You can also reach us on our social media handle
-                </h1>
-                <div class="col-12 text-center">
-                  <br />
-                  <i class="fa-brands fa-instagram fa-2xl"></i> :
-                  <a href="http://instagram.com" class="text-dark"
-                    >@young.mothershaven</a
-                  >
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="damilolaModal"
+                tabindex="-1"
+                aria-labelledby="damilolaModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="damilolaModalLabel">
+                        Convener
+                      </h1>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      Damilola Taiwo is a dynamic and visionary entrepreneur,
+                      passionate about making an impact in various fields. She
+                      is the Convener of the Young Mother and Child Haven
+                      Foundation; an NGO dedicated to supporting Young Mothers
+                      and educating Girls to prevent unwanted pregnancies. As a
+                      creative and compassionate leader, Damilola is committed
+                      to addressing the challenges of unwanted pregnancies by
+                      reaching out to girls in schools and communities. Her
+                      foundation aims to inspire hope, nurture potential, and
+                      promote values that foster strong families and empowered
+                      women. Driven by her faith and a heart for service,
+                      Damilola Taiwo believes in creating a world where young
+                      mothers and girls can thrive, find purpose, and build a
+                      brighter future for themselves and their children.
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                    </div>
+                  </div>
                 </div>
-                <div class="col-12 text-center">
-                  <br />
-                  <i class="fa-solid fa-envelope fa-2xl"></i> :
-                  <a href="mailto:ymothershaven@gmail.com" class="text-dark"
-                    >ymothershaven@gmail.com</a
-                  >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-4 mt-3 d-flex justify-content-center">
+          <div class="card mx-auto-mobile" style="width: 18rem">
+            <img
+              src="./static/images/man2.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body text-center-mobile">
+              <h5 class="card-title">Mr. Ibukunoluwa Taiwo</h5>
+              <p class="card-text">
+                Mr Ibukunoluwa Taiwo is a certified project manager, a dynamic
+                entrepreneur, and a passionate teacher of the word of God.
+              </p>
+              <div class="d-flex justify-content-center">
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#ibukunModal"
+                >
+                  Read More
+                </button>
+              </div>
+
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="ibukunModal"
+                tabindex="-1"
+                aria-labelledby="ibukunModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="ibukunModalLabel">
+                        Project Manager / CEO Sentry Ltd
+                      </h1>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      Mr Ibukunoluwa Taiwo is a certified project manager, a
+                      dynamic entrepreneur, and a passionate teacher of the word
+                      of God. He is the supportive husband of the convener of
+                      the Young Mother and Child Haven Foundation, Mrs. Damilola
+                      Taiwo and a key pillar in the pursuite of there shared
+                      vision to empower and uplift lives. Mr Ibukunoluwa serves
+                      as the director at Walet steel structural and construction
+                      company Ltd and Furniment nigeria Ltd, where he plays a
+                      pevotal role in driving innovation and excellence in their
+                      operations. In addition to his leadership roles, he is the
+                      founder of Sentry Ltd, a versatile brand that operates
+                      under two primary arms: Sentry Furniture, known for its
+                      premium craftmanship, and Sentry farms, dedicated to
+                      sustainable agriculture and food production. Beyond his
+                      professional achievements, Mr Ibukunoluwa is a gifted
+                      teacher of the word and a music lover, inspiring others
+                      with his deep understanding of scripture and commitement
+                      to spiritual growth. His leadership, Integrity, and
+                      unwavering dedication to his faith and family make him a
+                      remarkable example of a purpose-driven life.
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-4 mt-3 d-flex justify-content-center">
+          <div class="card mx-auto-mobile" style="width: 18rem">
+            <img
+              src="./static/images/man1.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body text-center-mobile">
+              <h5 class="card-title">Pastor Damilola Karounwi</h5>
+              <p class="card-text">
+                Pastor Damilola is the preciding pastor of Menorah Ministry
+                International: an enclave anchored on the pirsuit for infallible
+                words of the father of light.
+              </p>
+              <div class="d-flex justify-content-center">
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#pastorModal"
+                >
+                  Read More
+                </button>
+              </div>
+
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="pastorModal"
+                tabindex="-1"
+                aria-labelledby="pastorModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="pastorModalLabel">
+                        President, MMI
+                      </h1>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      Pastor Damilola is the preciding pastor of Menorah
+                      Ministry International: an enclave anchored on the pirsuit
+                      for infallible words of the father of light. He was
+                      officially ordained a pastor in 2015 but he has been
+                      preaching for about 15 years. He id a dynamic itinerant
+                      minister of the gospel fully commited to raising men of
+                      stature and rnakin in Christ. His passion is made bare by
+                      the ministry he pioneered. God through him has wrought
+                      many faultless and undeniable signs and wonders, shifting
+                      paradigms and bringing to there the revelation of the
+                      Christ via succinct inspired teachings. He is happily
+                      married to Mrs Karounwi Itunuoluwa Louisa and they are
+                      blessed with two glorious children.
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-
-      <!-- GALLERY SECTION -->
-      <a name="gallery"></a>
-      <section id="gallery" class="mt-5 mb-5" data-aos="flip-down">
-        <div class="container">
-          <div class="text-center mb-4">
-            <h2>Our Gallery</h2>
-            <p class="text-muted">
-              Moments from our events, programs, and outreach initiatives
-            </p>
-          </div>
-
-          <div class="row g-3">
-            <!-- Repeat for each image -->
-            <div class="col-12 col-sm-6 col-lg-4">
-              <div class="gallery-img rounded shadow-sm overflow-hidden">
-                <img
-                  src="./static/images/img1.jpg"
-                  alt="Gallery Image 1"
-                  class="img-fluid w-100"
-                />
+      <div class="row justify-content-center">
+        <div class="col-12 col-lg-6 mt-3 d-flex justify-content-center">
+          <div class="card mx-auto-mobile" style="width: 18rem">
+            <img
+              src="./static/images/man3.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body text-center-mobile">
+              <h5 class="card-title">Tunde Rhema</h5>
+              <p class="card-text">
+                Tunder Rhema is a renowned leader with expertise in mental
+                health, leadership, communication, publicity, community
+                building, and guiding others in the matter of faith.
+              </p>
+              <div class="d-flex justify-content-center">
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#card4Modal"
+                >
+                  Read More
+                </button>
               </div>
-            </div>
 
-            <div class="col-12 col-sm-6 col-lg-4">
-              <div class="gallery-img rounded shadow-sm overflow-hidden">
-                <img
-                  src="./static/images/img2.jpg"
-                  alt="Gallery Image 2"
-                  class="img-fluid w-100"
-                />
-              </div>
-            </div>
-
-            <div class="col-12 col-sm-6 col-lg-4">
-              <div class="gallery-img rounded shadow-sm overflow-hidden">
-                <img
-                  src="./static/images/img3.jpg"
-                  alt="Gallery Image 3"
-                  class="img-fluid w-100"
-                />
-              </div>
-            </div>
-
-            <div class="col-12 col-sm-6 col-lg-4">
-              <div class="gallery-img rounded shadow-sm overflow-hidden">
-                <img
-                  src="./static/images/img4.jpg"
-                  alt="Gallery Image 4"
-                  class="img-fluid w-100"
-                />
-              </div>
-            </div>
-
-            <div class="col-12 col-sm-6 col-lg-4">
-              <div class="gallery-img rounded shadow-sm overflow-hidden">
-                <img
-                  src="./static/images/img5.jpg"
-                  alt="Gallery Image 5"
-                  class="img-fluid w-100"
-                />
-              </div>
-            </div>
-
-            <div class="col-12 col-sm-6 col-lg-4">
-              <div class="gallery-img rounded shadow-sm overflow-hidden">
-                <img
-                  src="./static/images/img6.jpg"
-                  alt="Gallery Image 6"
-                  class="img-fluid w-100"
-                />
-              </div>
-            </div>
-
-            <div class="col-12 col-sm-6 col-lg-4">
-              <div class="gallery-img rounded shadow-sm overflow-hidden">
-                <img
-                  src="./static/images/img7.jpg"
-                  alt="Gallery Image 7"
-                  class="img-fluid w-100"
-                />
-              </div>
-            </div>
-
-            <div class="col-12 col-sm-6 col-lg-4">
-              <div class="gallery-img rounded shadow-sm overflow-hidden">
-                <img
-                  src="./static/images/img8.jpg"
-                  alt="Gallery Image 8"
-                  class="img-fluid w-100"
-                />
-              </div>
-            </div>
-
-            <div class="col-12 col-sm-6 col-lg-4">
-              <div class="gallery-img rounded shadow-sm overflow-hidden">
-                <img
-                  src="./static/images/img9.jpg"
-                  alt="Gallery Image 9"
-                  class="img-fluid w-100"
-                />
-              </div>
-            </div>
-
-            <div class="col-12 col-sm-6 col-lg-4">
-              <div class="gallery-img rounded shadow-sm overflow-hidden">
-                <img
-                  src="./static/images/img10.jpg"
-                  alt="Gallery Image 10"
-                  class="img-fluid w-100"
-                />
-              </div>
-            </div>
-
-            <div class="col-12 col-sm-6 col-lg-4">
-              <div class="gallery-img rounded shadow-sm overflow-hidden">
-                <img
-                  src="./static/images/img11.jpg"
-                  alt="Gallery Image 11"
-                  class="img-fluid w-100"
-                />
-              </div>
-            </div>
-
-            <div class="col-12 col-sm-6 col-lg-4">
-              <div class="gallery-img rounded shadow-sm overflow-hidden">
-                <img
-                  src="./static/images/img12.jpg"
-                  alt="Gallery Image 12"
-                  class="img-fluid w-100"
-                />
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="card4Modal"
+                tabindex="-1"
+                aria-labelledby="card4ModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="card4ModalLabel">
+                        Tunde Rhema
+                      </h1>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      Tunder Rhema is a renowned leader with expertise in mental
+                      health, leadership, communication, publicity, community
+                      building, and guiding others in the matter of faith. He is
+                      the founder of TRleadershipHub(TRLH), a global hub of
+                      leaderer, investment, lifestyle, and technology, which
+                      pays attention to investment in business leadership at
+                      different levels. His organisation also provides data
+                      management and service, media management, corporate
+                      communication, and content development for brands in
+                      various countries. He is a distinguished strategy support
+                      expert for Cerca Africa, a prestigious brand known for
+                      providing strategies, processes, and coaching for
+                      organisations and individuals. He is also a board member
+                      for Gold Dust executive leadership company
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
-    </main>
-    <!-- footer -->
-    <footer class="text-dark pt-4 pb-3 mt-5">
+        <div class="col-12 col-lg-6 mt-3 d-flex justify-content-center">
+          <div class="card mx-auto-mobile" style="width: 18rem">
+            <img
+              src="./static/images/woman1.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body text-center-mobile">
+              <h5 class="card-title">Oluwatoyin Falaiye</h5>
+              <p class="card-text">
+                Oluwatoyin Falaiye is a woman on Assignment whose journey
+                encompasses law, Gender Justice advocacy, writing, Trauma
+                Management, life coaching and Ministry Her work is rooted in her
+                profound commitment to healing, wholeness, and
+                purpose-discovery.
+              </p>
+              <div class="d-flex justify-content-center">
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#card5Modal"
+                >
+                  Read More
+                </button>
+              </div>
+
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="card5Modal"
+                tabindex="-1"
+                aria-labelledby="card5ModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="card5ModalLabel">
+                        Oluwatoyin Falaiye
+                      </h1>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      Oluwatoyin Falaiye is a woman on Assignment whose journey
+                      encompasses law, Gender Justice advocacy, writing, Trauma
+                      Management, life coaching and Ministry Her work is rooted
+                      in her profound commitment to healing, wholeness, and
+                      purpose-discovery She is a trained Lawyer with years of
+                      experience and expertise in corporate law, Gender Justice
+                      and Human Rights. She is also a certified trauma-informed
+                      manager and Life Coach, Sexual and Gender-Based Violence
+                      Public Speaking and leadership. She is also Inspirational
+                      Writer and Author of "Beyond the Abuse " and the best
+                      selling memoir "Diamond in the Rough" She is the Founder
+                      of Jewels Hive Initiative. An NGO that provides safe
+                      space, psycho-social support and access to justice to
+                      victims and survivors of sexual abuse and domestic
+                      violence.offering advocacy, counselling, psychotherapy,
+                      and mental health services
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="text-white pt-5 pb-4 mt-5" id="footer">
       <div class="container">
-        <div class="row text-center text-lg-start">
-          <div class="col-12 col-lg-4 mb-4 mb-lg-0">
-            <h5 class="fw-bold">Young Women & Child Haven Foundation</h5>
-            <p>
-              Creating a safe space for young women and children to thrive
-              through love, care, education, and empowerment.
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <h5>About Our Foundation</h5>
+            <p class="text-light">
+              The Young Women & Child Haven Foundation is dedicated to
+              protecting, uplifting, and empowering vulnerable young women and
+              children.
             </p>
           </div>
-          <div class="col-12 col-lg-4 mb-4 mb-lg-0">
-            <h5 class="fw-bold">Quick Links</h5>
+
+          <div class="col-md-4 mb-4">
+            <h5 class="text-light">Quick Links</h5>
             <ul class="list-unstyled">
               <li>
-                <a href="index.html" class="text-dark text-decoration-none"
-                  >Home</a
+                <a href="#" class="text-decoration-none text-light">Home</a>
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-light">About Us</a>
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-light"
+                  >Our Programs</a
                 >
               </li>
               <li>
-                <a href="#" class="text-dark text-decoration-none">About</a>
+                <a href="#" class="text-decoration-none text-light">Gallery</a>
               </li>
               <li>
-                <a href="#" class="text-dark text-decoration-none">Contact</a>
-              </li>
-              <li>
-                <a href="#" class="text-dark text-decoration-none">Gallery</a>
+                <a href="#" class="text-decoration-none text-light">Contact</a>
               </li>
             </ul>
           </div>
-          <div class="col-12 col-lg-4">
-            <h5 class="fw-bold">Contact Us</h5>
-            <p>
-              Email:
-              <a href="mailto:ymothershaven@gmail.com" class="text-dark"
-                >ymothershaven@gmail.com</a
-              >
-            </p>
-            <p>
-              Phone:
-              <a href="tel:+234-913-704-2786" class="text-dark"
-                >+234-913-704-2786</a
-              >
-            </p>
-            <p>Location: Lagos, Nigeria</p>
+
+          <div class="col-md-4 mb-4">
+            <h5 class="text-light">Contact Us</h5>
+            <address class="text-light">
+              <p>
+                <i class="bi bi-geo-alt-fill text-light"></i> 123 Foundation Street, City
+              </p>
+              <p><i class="bi bi-telephone-fill text-light"></i> 09137042786</p>
+              <p><i class="bi bi-envelope-fill text-light"></i> ymothershaven@gmail.com</p>
+            </address>
+
+            <div class="social-icons">
+              <a href="#" class="text-light me-2"
+                ><i class="bi bi-facebook"></i
+              ></a>
+              <a href="#" class="text-light me-2"
+                ><i class="bi bi-twitter"></i
+              ></a>
+              <a href="#" class="text-light me-2"
+                ><i class="bi bi-instagram"></i
+              ></a>
+              <a href="#" class="text-white"><i class="bi bi-linkedin"></i></a>
+            </div>
           </div>
         </div>
-        <hr class="border-dark" />
-        <div class="text-center small">
-          &copy; 2025 Young Women & Child Haven Foundation. All rights reserved.
+
+        <hr class="my-4 bg-secondary" />
+
+        <div class="row">
+          <div class="col-md-6 text-center text-md-start">
+            <p class="text-light mb-0">
+              &copy; 2023 Young Women & Child Haven Foundation. All rights
+              reserved.
+            </p>
+          </div>
+          <div class="col-md-6 text-center text-md-end">
+            <p class="text-light mb-0">
+              <a href="#" class="text-decoration-none text-light"
+                >Privacy Policy</a
+              >
+              <a href="#" class="text-decoration-none text-light"
+                >Terms of Service</a
+              >
+            </p>
+          </div>
         </div>
       </div>
     </footer>
 
-    <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <!-- Counter-Up Plugin -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/jquery.counterup@2.1.0/jquery.counterup.min.js"></script>
+    <!-- Add Bootstrap Ions CSS (for the social icons) -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css"
+    />
     <script src="script.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://kit.fontawesome.com/e5011a2023.js"
       crossorigin="anonymous"
     ></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
