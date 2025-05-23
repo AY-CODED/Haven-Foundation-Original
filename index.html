@@ -3,8 +3,9 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Bootstrap demo</title>
-    <link rel="stylesheet" href="./static/css/style.css" />
+    <title>Young Women & Child Haven Foundation</title>
+    <link rel="stylesheet" href="./static/css/style.css">
+    <link rel="stylesheet" href="./static/images/Logo.png" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -12,13 +13,21 @@
       crossorigin="anonymous"
     />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css"
+    />
   </head>
   <body>
     <nav class="navbar navbar-expand-lg" id="navBar">
       <div class="container-fluid" id="navItems">
-        <a class="navbar-brand" href="#"
-          ><img src="./static/images/Logo.png" alt="" width="100"
-        /></a>
+        <a class="navbar-brand" href="#">
+          <img
+            src="./static/images/Logo.png"
+            alt="Young Women & Child Haven Foundation Logo"
+            width="100"
+          />
+        </a>
         <button
           class="navbar-toggler"
           type="button"
@@ -33,19 +42,19 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-center" id="navList">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
+              <a class="nav-link" href="#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="#contact">Contact</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Story</a>
+              <a class="nav-link" href="#story">Story</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Gallery</a>
+              <a class="nav-link" href="#gallery">Gallery</a>
             </li>
           </ul>
         </div>
@@ -53,129 +62,88 @@
     </nav>
 
     <div class="container">
-      <div class="row d-flex justify-content-center">
-        <div class="col-12 col-lg-6 mt-4" id="heroText" data-aos="zoom-in">
-          <h1>Small changes make a big impact on children lives</h1>
+      <div class="row d-flex">
+        <div class="col-12 col-lg-6 mt-3" id="heroText">
+          <h1>Small Changes Make a Big Impact on Children's Lives</h1>
           <p>
-            Empowering the Future, One Life at a Time The Young Women & Child
+            Empowering the Future, One Life at a Time. The Young Women & Child
             Haven Foundation is a nonprofit organization dedicated to
             protecting, uplifting, and empowering vulnerable young women and
             children. Our foundation was born from a deep desire to create a
             safe, nurturing environment where hope is restored, dignity is
             preserved, and potential is unlocked.
           </p>
-          <!-- Button trigger modal -->
-          <div class="d-flex">
+          <div class="btbn ms-1">
+            <!-- Button trigger modal -->
             <button
               type="button"
-              class="btn"
+              class="btn btn-primary"
               data-bs-toggle="modal"
-              data-bs-target="#heroModal"
+              data-bs-target="#exampleModal"
               id="heroBtn"
             >
               Read More
             </button>
-          </div>
 
-          <!-- Modal -->
-          <div
-            class="modal fade"
-            id="heroModal"
-            tabindex="-1"
-            aria-labelledby="heroModalLabel"
-            aria-hidden="true"
-          >
-            <div class="modal-dialog modal-dialog-scrollable">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h1 class="modal-title fs-5" id="heroModalLabel">
-                    Our Mission
-                  </h1>
-                  <button
-                    type="button"
-                    class="btn-close"
-                    data-bs-dismiss="modal"
-                    aria-label="Close"
-                  ></button>
-                </div>
-                <div class="modal-body">
-                  <p>Empowering the Future, One Life at a Time</p>
-                  <p>
-                    The Young Women & Child Haven Foundation is a nonprofit
-                    organization dedicated to protecting, uplifting, and
-                    empowering vulnerable young women and children. Our
-                    foundation was born from a deep desire to create a safe,
-                    nurturing environment where hope is restored, dignity is
-                    preserved, and potential is unlocked.
-                  </p>
-                  <p>
-                    We believe every child and young woman deserves a chance to
-                    thrive, regardless of their circumstances. Through our
-                    programs, we provide education, healthcare, mentorship, and
-                    life skills training to help them build brighter futures.
-                  </p>
-                </div>
-                <div class="modal-footer">
-                  <button
-                    type="button"
-                    class="btn btn-secondary"
-                    data-bs-dismiss="modal"
-                  >
-                    Close
-                  </button>
-                  <button type="button" class="btn btn-primary">
-                    Learn More
-                  </button>
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="exampleModal"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">
+                      Modal title
+                    </h1>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <p>Empowering the Future, One Life at a Time</p>
+                    <p>
+                      The Young Women & Child Haven Foundation is a nonprofit
+                      organization dedicated to protecting, uplifting, and
+                      empowering vulnerable young women and children. Our
+                      foundation was born from a deep desire to create a safe,
+                      nurturing environment where hope is restored, dignity is
+                      preserved, and potential is unlocked.
+                    </p>
+                    <p>
+                      We believe every child and young woman deserves a chance
+                      to thrive, regardless of their circumstances. Through our
+                      programs, we provide education, healthcare, mentorship,
+                      and life skills training to help them build brighter
+                      futures.
+                    </p>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-12 col-lg-6 mt-3 d-flex justify-content-center">
+        <div class="col-12 col-lg-6 mt-3">
           <img
             src="./static/images/img9.jpg"
-            class="rounded-3 img-fluid mx-auto-mobile"
-            id="heroImg"
-            alt=""
+            alt="Hero Image"
+            class="img-fluid rounded-2"
           />
-        </div>
-      </div>
-    </div>
-
-    <div class="container mt-4">
-      <div class="row g-3 justify-content-center">
-        <!-- Use Bootstrap grid gutter here -->
-        <div
-          class="col-12 col-lg-6 mt-4 text-center-mobile"
-          id="aboutUs"
-          data-aos="flip-up"
-        >
-          <h1 class="text-center-mobile">About Us</h1>
-          <p class="text-center-mobile">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum
-            minima, odit magni accusantium aut quo perferendis voluptatem animi
-            asperiores eveniet reprehenderit nisi libero, quae quam iure vitae!
-            Fugit, magnam modi! Enim porro est doloremque unde. Reprehenderit,
-            eius, ipsam unde aspernatur officiis quasi fugit eaque maxime sunt
-            odio sed accusantium beatae, id incidunt dolore aperiam itaque? Sint
-            obcaecati maxime reiciendis aliquid?
-          </p>
-        </div>
-        <div
-          class="col-12 col-lg-6 mt-4 text-center-mobile"
-          id="contactUs"
-          data-aos="flip-right"
-        >
-          <h1 class="text-center-mobile">Contact Us</h1>
-          <p class="text-center-mobile">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Perspiciatis necessitatibus vitae illo laudantium ipsum molestias,
-            eligendi eos non iure amet voluptatum repellat quidem nostrum
-            dolorem, doloribus hic fuga aperiam vel. Velit, odit ab dicta
-            voluptatibus maiores iure quae, nihil nisi consequuntur earum odio.
-            Ullam odio harum mollitia qui illo cum doloremque. Quae, animi
-            perferendis iste tempora architecto voluptatibus ut quas.
-          </p>
         </div>
       </div>
     </div>
@@ -183,11 +151,11 @@
     <div class="container">
       <div class="row d-flex justify-content-center">
         <div class="col-12 col-lg-4 mt-3 d-flex justify-content-center">
-          <div class="card mx-auto-mobile" style="width: 18rem">
+          <div class="card w-100" style="width: 18rem">
             <img
               src="./static/images/wolman2.jpg"
               class="card-img-top"
-              alt="..."
+              alt="Mrs. Damilola Taiwo, Convener of the foundation"
             />
             <div class="card-body">
               <h5 class="card-title">Mrs. Damilola Taiwo</h5>
@@ -195,13 +163,13 @@
                 Damilola Taiwo is a dynamic and visionary entrepreneur,
                 passionate about making an impact in various fields.
               </p>
-              <!-- Button trigger modal -->
               <div class="d-flex">
                 <button
                   type="button"
                   class="btn btn-primary"
                   data-bs-toggle="modal"
                   data-bs-target="#damilolaModal"
+                  id="heroBtn"
                 >
                   Read More
                 </button>
@@ -260,24 +228,25 @@
           </div>
         </div>
         <div class="col-12 col-lg-4 mt-3 d-flex justify-content-center">
-          <div class="card mx-auto-mobile" style="width: 18rem">
+          <div class="card w-100" style="width: 18rem">
             <img
               src="./static/images/man2.jpg"
               class="card-img-top"
-              alt="..."
+              alt="Mr. Ibukunoluwa Taiwo, Project Manager"
             />
-            <div class="card-body text-center-mobile">
+            <div class="card-body">
               <h5 class="card-title">Mr. Ibukunoluwa Taiwo</h5>
               <p class="card-text">
                 Mr Ibukunoluwa Taiwo is a certified project manager, a dynamic
                 entrepreneur, and a passionate teacher of the word of God.
               </p>
-              <div class="d-flex justify-content-center">
+              <div class="d-flex">
                 <button
                   type="button"
                   class="btn btn-primary"
                   data-bs-toggle="modal"
                   data-bs-target="#ibukunModal"
+                  id="heroBtn"
                 >
                   Read More
                 </button>
@@ -342,25 +311,26 @@
           </div>
         </div>
         <div class="col-12 col-lg-4 mt-3 d-flex justify-content-center">
-          <div class="card mx-auto-mobile" style="width: 18rem">
+          <div class="card w-100" style="width: 18rem">
             <img
               src="./static/images/man1.jpg"
               class="card-img-top"
-              alt="..."
+              alt="Pastor Damilola Karounwi, President of MMI"
             />
-            <div class="card-body text-center-mobile">
+            <div class="card-body">
               <h5 class="card-title">Pastor Damilola Karounwi</h5>
               <p class="card-text">
                 Pastor Damilola is the preciding pastor of Menorah Ministry
                 International: an enclave anchored on the pirsuit for infallible
                 words of the father of light.
               </p>
-              <div class="d-flex justify-content-center">
+              <div class="d-flex">
                 <button
                   type="button"
                   class="btn btn-primary"
                   data-bs-toggle="modal"
                   data-bs-target="#pastorModal"
+                  id="heroBtn"
                 >
                   Read More
                 </button>
@@ -420,25 +390,26 @@
       </div>
       <div class="row justify-content-center">
         <div class="col-12 col-lg-6 mt-3 d-flex justify-content-center">
-          <div class="card mx-auto-mobile" style="width: 18rem">
+          <div class="card w-100" style="width: 18rem">
             <img
               src="./static/images/man3.jpg"
               class="card-img-top"
-              alt="..."
+              alt="Tunde Rhema, leadership expert"
             />
-            <div class="card-body text-center-mobile">
+            <div class="card-body">
               <h5 class="card-title">Tunde Rhema</h5>
               <p class="card-text">
                 Tunder Rhema is a renowned leader with expertise in mental
                 health, leadership, communication, publicity, community
                 building, and guiding others in the matter of faith.
               </p>
-              <div class="d-flex justify-content-center">
+              <div class="d-flex">
                 <button
                   type="button"
                   class="btn btn-primary"
                   data-bs-toggle="modal"
                   data-bs-target="#card4Modal"
+                  id="heroBtn"
                 >
                   Read More
                 </button>
@@ -497,13 +468,13 @@
           </div>
         </div>
         <div class="col-12 col-lg-6 mt-3 d-flex justify-content-center">
-          <div class="card mx-auto-mobile" style="width: 18rem">
+          <div class="card w-100">
             <img
               src="./static/images/woman1.jpg"
               class="card-img-top"
-              alt="..."
+              alt="Oluwatoyin Falaiye, lawyer and advocate"
             />
-            <div class="card-body text-center-mobile">
+            <div class="card-body">
               <h5 class="card-title">Oluwatoyin Falaiye</h5>
               <p class="card-text">
                 Oluwatoyin Falaiye is a woman on Assignment whose journey
@@ -512,12 +483,13 @@
                 profound commitment to healing, wholeness, and
                 purpose-discovery.
               </p>
-              <div class="d-flex justify-content-center">
+              <div class="d-flex">
                 <button
                   type="button"
                   class="btn btn-primary"
                   data-bs-toggle="modal"
                   data-bs-target="#card5Modal"
+                  id="heroBtn"
                 >
                   Read More
                 </button>
@@ -579,7 +551,42 @@
         </div>
       </div>
     </div>
-
+    <a name="about"></a>
+    <div class="container mt-4">
+      <div class="row g-3 justify-content-center">
+        <div
+          class="col-12 col-lg-6 mt-4 text-center text-lg-start"
+          id="aboutUs"
+          data-aos="flip-up"
+        >
+          <h1>About Us</h1>
+          <p>
+            The Young Women & Child Haven Foundation was established in 2015
+            with the mission to protect, uplift, and empower vulnerable young
+            women and children. Our organization provides safe spaces,
+            education, healthcare, and life skills training to help
+            beneficiaries build sustainable futures. We work in partnership with
+            local communities, government agencies, and other NGOs to create
+            lasting change.
+          </p>
+        </div>
+        <a name="contact"></a>
+        <div
+          class="col-12 col-lg-6 mt-4 text-center text-lg-start"
+          id="contactUs"
+          data-aos="flip-right"
+        >
+          <h1>Contact Us</h1>
+          <p>
+            We'd love to hear from you! Whether you want to volunteer, donate,
+            or learn more about our programs, please reach out. Our team is
+            available Monday through Friday from 9am to 5pm. You can visit our
+            office at 123 Foundation Street, or contact us via phone or email
+            for more information about our initiatives.
+          </p>
+        </div>
+      </div>
+    </div>
     <footer class="text-white pt-5 pb-4 mt-5" id="footer">
       <div class="container">
         <div class="row">
@@ -588,18 +595,18 @@
             <p class="text-light">
               The Young Women & Child Haven Foundation is dedicated to
               protecting, uplifting, and empowering vulnerable young women and
-              children.
+              children through education, healthcare, and life skills training.
             </p>
           </div>
 
           <div class="col-md-4 mb-4">
-            <h5 class="text-light">Quick Links</h5>
+            <h5>Quick Links</h5>
             <ul class="list-unstyled">
               <li>
-                <a href="#" class="text-decoration-none text-light">Home</a>
+                <a href="#index" class="text-decoration-none text-light">Home</a>
               </li>
               <li>
-                <a href="#" class="text-decoration-none text-light">About Us</a>
+                <a href="#about" class="text-decoration-none text-light">About Us</a>
               </li>
               <li>
                 <a href="#" class="text-decoration-none text-light"
@@ -607,22 +614,26 @@
                 >
               </li>
               <li>
-                <a href="#" class="text-decoration-none text-light">Gallery</a>
+                <a href="#gallery" class="text-decoration-none text-light">Gallery</a>
               </li>
               <li>
-                <a href="#" class="text-decoration-none text-light">Contact</a>
+                <a href="#contact" class="text-decoration-none text-light">Contact</a>
               </li>
             </ul>
           </div>
 
           <div class="col-md-4 mb-4">
-            <h5 class="text-light">Contact Us</h5>
-            <address class="text-light">
+            <h5>Contact Us</h5>
+            <address>
               <p>
-                <i class="bi bi-geo-alt-fill text-light"></i> 123 Foundation Street, City
+                <i class="bi bi-geo-alt-fill text-light"></i> 123 Foundation
+                Street, City
               </p>
               <p><i class="bi bi-telephone-fill text-light"></i> 09137042786</p>
-              <p><i class="bi bi-envelope-fill text-light"></i> ymothershaven@gmail.com</p>
+              <p>
+                <i class="bi bi-envelope-fill text-light"></i>
+                ymothershaven@gmail.com
+              </p>
             </address>
 
             <div class="social-icons">
@@ -651,7 +662,7 @@
           </div>
           <div class="col-md-6 text-center text-md-end">
             <p class="text-light mb-0">
-              <a href="#" class="text-decoration-none text-light"
+              <a href="#" class="text-decoration-none text-light me-3"
                 >Privacy Policy</a
               >
               <a href="#" class="text-decoration-none text-light"
@@ -663,11 +674,6 @@
       </div>
     </footer>
 
-    <!-- Add Bootstrap Ions CSS (for the social icons) -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css"
-    />
     <script src="script.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
