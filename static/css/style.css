@@ -59,6 +59,12 @@ body {
   font-weight: bolder;
 }
 
+#txt{
+  color: var(--bgcolor) !important;
+  font-size: 2rem;
+  font-weight: bolder;
+}
+
 #footer {
   background-color: var(--bgColor);
 }
