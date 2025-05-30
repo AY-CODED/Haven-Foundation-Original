@@ -23,6 +23,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css"
     />
+    <link rel="stylesheet" href="card.css" />
   </head>
   <body>
     <nav class="navbar navbar-expand-lg" id="navBar">
@@ -72,7 +73,6 @@
     <div class="container">
       <div class="row d-flex">
         <div class="col-12 col-lg-6 mt-3" id="heroText">
-          <h1>Small Changes Make a Big Impact on Children's Lives</h1>
           <p>
             Empowering the Future, One Life at a Time. The Young Women & Child
             Haven Foundation is a nonprofit organization dedicated to
@@ -156,219 +156,120 @@
       </div>
     </div>
 
-    <h1 class="text-center mt-3" id="txt">Meet Our Team</h1>
-
-    <div class="container">
-      <div class="row d-flex justify-content-center">
-        <div class="col-12 col-lg-4 mt-3 d-flex justify-content-center">
-          <div class="card w-100" style="width: 18rem">
+    <section class="container-fluid py-5">
+      <h2 class="text-center mb-4">Board of Directors</h2>
+      <div class="row justify-content-center g-4">
+        <!-- Card 1 -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="card h-100 shadow-sm border-0">
             <img
               src="./static/images/wolman2.jpg"
-              class="card-img-top"
-              alt="Mrs. Damilola Taiwo, Convener of the foundation"
+              class="card-img-top img-fluid"
+              alt="Damilola Taiwo"
             />
-            <div class="card-body">
-              <h5 class="card-title">Mrs. Damilola Taiwo</h5>
-              <p class="card-text">
-                Damilola Taiwo is a dynamic and visionary entrepreneur,
-                passionate about making an impact in various fields.
+            <div class="card-body text-center">
+              <h5 class="card-title">Damilola Taiwo</h5>
+              <p class="card-text small text-muted">
+                Convener, Young Mother and Child Haven Foundation.
               </p>
-              <div class="d-flex">
-                <button
-                  type="button"
-                  class="btn btn-primary"
-                  data-bs-toggle="modal"
-                  data-bs-target="#damilolaModal"
-                  id="heroBtn"
-                >
-                  Read More
-                </button>
-              </div>
-
-              <!-- Modal -->
-              <div
-                class="modal fade"
-                id="damilolaModal"
-                tabindex="-1"
-                aria-labelledby="damilolaModalLabel"
-                aria-hidden="true"
+              <button
+                class="btn btn-outline-primary"
+                data-bs-toggle="collapse"
+                data-bs-target="#bio1"
               >
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h1 class="modal-title fs-5" id="damilolaModalLabel">
-                        Convener
-                      </h1>
-                      <button
-                        type="button"
-                        class="btn-close"
-                        data-bs-dismiss="modal"
-                        aria-label="Close"
-                      ></button>
-                    </div>
-                    <div class="modal-body">
-                      Damilola Taiwo is a dynamic and visionary entrepreneur,
-                      passionate about making an impact in various fields. She
-                      is the Convener of the Young Mother and Child Haven
-                      Foundation; an NGO dedicated to supporting Young Mothers
-                      and educating Girls to prevent unwanted pregnancies. As a
-                      creative and compassionate leader, Damilola is committed
-                      to addressing the challenges of unwanted pregnancies by
-                      reaching out to girls in schools and communities. Her
-                      foundation aims to inspire hope, nurture potential, and
-                      promote values that foster strong families and empowered
-                      women. Driven by her faith and a heart for service,
-                      Damilola Taiwo believes in creating a world where young
-                      mothers and girls can thrive, find purpose, and build a
-                      brighter future for themselves and their children.
-                    </div>
-                    <div class="modal-footer">
-                      <button
-                        type="button"
-                        class="btn btn-secondary"
-                        data-bs-dismiss="modal"
-                      >
-                        Close
-                      </button>
-                    </div>
-                  </div>
-                </div>
+                View Bio
+              </button>
+              <div class="collapse mt-2 text-start" id="bio1">
+                <p class="small">
+                  Damilola Taiwo is a dynamic and visionary entrepreneur,
+                  passionate about making an impact in various fields. She is
+                  the Convener of the Young Mother and Child Haven Foundation;
+                  an NGO dedicated to supporting Young Mothers and educating
+                  Girls to prevent unwanted pregnancies. As a creative and
+                  compassionate leader, Damilola is committed to addressing the
+                  challenges of unwanted pregnancies by reaching out to girls in
+                  schools and communities. Her foundation aims to inspire hope,
+                  nurture potential, and promote values that foster strong
+                  families and empowered women. Driven by her faith and a heart
+                  for service, Damilola Taiwo believes in creating a world where
+                  young mothers and girls can thrive, find purpose, and build a
+                  brighter future for themselves and their children.
+                </p>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-12 col-lg-4 mt-3 d-flex justify-content-center">
-          <div class="card w-100" style="width: 18rem">
+        <br />
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="card h-100 shadow-sm border-0">
             <img
               src="./static/images/man2.jpg"
-              class="card-img-top"
-              alt="Mr. Ibukunoluwa Taiwo, Project Manager"
+              class="card-img-top img-fluid"
+              alt="Ibukunoluwa Taiwo"
             />
-            <div class="card-body">
-              <h5 class="card-title">Mr. Ibukunoluwa Taiwo</h5>
-              <p class="card-text">
-                Mr Ibukunoluwa Taiwo is a certified project manager, a dynamic
-                entrepreneur, and a passionate teacher of the word of God.
+            <div class="card-body text-center">
+              <h5 class="card-title">Damilola Taiwo</h5>
+              <p class="card-text small text-muted">
+                Convener, Young Mother and Child Haven Foundation.
               </p>
-              <div class="d-flex">
-                <button
-                  type="button"
-                  class="btn btn-primary"
-                  data-bs-toggle="modal"
-                  data-bs-target="#ibukunModal"
-                  id="heroBtn"
-                >
-                  Read More
-                </button>
-              </div>
-
-              <!-- Modal -->
-              <div
-                class="modal fade"
-                id="ibukunModal"
-                tabindex="-1"
-                aria-labelledby="ibukunModalLabel"
-                aria-hidden="true"
+              <button
+                class="btn btn-outline-primary"
+                data-bs-toggle="collapse"
+                data-bs-target="#bio1"
               >
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h1 class="modal-title fs-5" id="ibukunModalLabel">
-                        Project Manager / CEO Sentry Ltd
-                      </h1>
-                      <button
-                        type="button"
-                        class="btn-close"
-                        data-bs-dismiss="modal"
-                        aria-label="Close"
-                      ></button>
-                    </div>
-                    <div class="modal-body">
-                      Mr Ibukunoluwa Taiwo is a certified project manager, a
-                      dynamic entrepreneur, and a passionate teacher of the word
-                      of God. He is the supportive husband of the convener of
-                      the Young Mother and Child Haven Foundation, Mrs. Damilola
-                      Taiwo and a key pillar in the pursuite of there shared
-                      vision to empower and uplift lives. Mr Ibukunoluwa serves
-                      as the director at Walet steel structural and construction
-                      company Ltd and Furniment nigeria Ltd, where he plays a
-                      pevotal role in driving innovation and excellence in their
-                      operations. In addition to his leadership roles, he is the
-                      founder of Sentry Ltd, a versatile brand that operates
-                      under two primary arms: Sentry Furniture, known for its
-                      premium craftmanship, and Sentry farms, dedicated to
-                      sustainable agriculture and food production. Beyond his
-                      professional achievements, Mr Ibukunoluwa is a gifted
-                      teacher of the word and a music lover, inspiring others
-                      with his deep understanding of scripture and commitement
-                      to spiritual growth. His leadership, Integrity, and
-                      unwavering dedication to his faith and family make him a
-                      remarkable example of a purpose-driven life.
-                    </div>
-                    <div class="modal-footer">
-                      <button
-                        type="button"
-                        class="btn btn-secondary"
-                        data-bs-dismiss="modal"
-                      >
-                        Close
-                      </button>
-                    </div>
-                  </div>
-                </div>
+                View Bio
+              </button>
+              <div class="collapse mt-2 text-start" id="bio1">
+                <p class="small">
+                  Mr Ibukunoluwa Taiwo is a certified project manager, a dynamic
+                  entrepreneur, and a passionate teacher of the word of God. He
+                  is the supportive husband of the convener of the Young Mother
+                  and Child Haven Foundation, Mrs. Damilola Taiwo and a key
+                  pillar in the pursuite of there shared vision to empower and
+                  uplift lives. Mr Ibukunoluwa serves as the director at Walet
+                  steel structural and construction company Ltd and Furniment
+                  nigeria Ltd, where he plays a pevotal role in driving
+                  innovation and excellence in their operations. In addition to
+                  his leadership roles, he is the founder of Sentry Ltd, a
+                  versatile brand that operates under two primary arms: Sentry
+                  Furniture, known for its premium craftmanship, and Sentry
+                  farms, dedicated to sustainable agriculture and food
+                  production. Beyond his professional achievements, Mr
+                  Ibukunoluwa is a gifted teacher of the word and a music lover,
+                  inspiring others with his deep understanding of scripture and
+                  commitement to spiritual growth. His leadership, Integrity,
+                  and unwavering dedication to his faith and family make him a
+                  remarkable example of a purpose-driven life.
+                </p>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-12 col-lg-4 mt-3 d-flex justify-content-center">
-          <div class="card w-100" style="width: 18rem">
+        <br />
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="card h-100 shadow-sm border-0">
             <img
               src="./static/images/man1.jpg"
-              class="card-img-top"
-              alt="Pastor Damilola Karounwi, President of MMI"
+              class="card-img-top img-fluid"
+              alt=" Pastor Damilola Karounwi, President of MMI"
             />
-            <div class="card-body">
-              <h5 class="card-title">Pastor Damilola Karounwi</h5>
-              <p class="card-text">
-                Pastor Damilola is the preciding pastor of Menorah Ministry
-                International: an enclave anchored on the pirsuit for infallible
-                words of the father of light.
+            <div class="card-body text-center">
+              <h5 class="card-title">
+                Pastor Damilola Karounwi, President of MMI
+              </h5>
+              <p class="card-text small text-muted">
+                Convener, Young Mother and Child Haven Foundation.
               </p>
-              <div class="d-flex">
-                <button
-                  type="button"
-                  class="btn btn-primary"
-                  data-bs-toggle="modal"
-                  data-bs-target="#pastorModal"
-                  id="heroBtn"
-                >
-                  Read More
-                </button>
-              </div>
-
-              <!-- Modal -->
-              <div
-                class="modal fade"
-                id="pastorModal"
-                tabindex="-1"
-                aria-labelledby="pastorModalLabel"
-                aria-hidden="true"
+              <button
+                class="btn btn-outline-primary"
+                data-bs-toggle="collapse"
+                data-bs-target="#bio1"
               >
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h1 class="modal-title fs-5" id="pastorModalLabel">
-                        President, MMI
-                      </h1>
-                      <button
-                        type="button"
-                        class="btn-close"
-                        data-bs-dismiss="modal"
-                        aria-label="Close"
-                      ></button>
-                    </div>
-                    <div class="modal-body">
-                      Pastor Damilola is the preciding pastor of Menorah
+                View Bio
+              </button>
+              <div class="collapse mt-2 text-start" id="bio1">
+                <p class="small">
+                  Pastor Damilola is the preciding pastor of Menorah
                       Ministry International: an enclave anchored on the pirsuit
                       for infallible words of the father of light. He was
                       officially ordained a pastor in 2015 but he has been
@@ -381,72 +282,34 @@
                       Christ via succinct inspired teachings. He is happily
                       married to Mrs Karounwi Itunuoluwa Louisa and they are
                       blessed with two glorious children.
-                    </div>
-                    <div class="modal-footer">
-                      <button
-                        type="button"
-                        class="btn btn-secondary"
-                        data-bs-dismiss="modal"
-                      >
-                        Close
-                      </button>
-                    </div>
-                  </div>
-                </div>
+                </p>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="row justify-content-center">
-        <div class="col-12 col-lg-6 mt-3 d-flex justify-content-center">
-          <div class="card w-100" style="width: 18rem">
+        <br />
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="card h-100 shadow-sm border-0">
             <img
               src="./static/images/man3.jpg"
-              class="card-img-top"
+              class="card-img-top img-fluid"
               alt="Tunde Rhema, leadership expert"
             />
-            <div class="card-body">
-              <h5 class="card-title">Tunde Rhema</h5>
-              <p class="card-text">
-                Tunder Rhema is a renowned leader with expertise in mental
-                health, leadership, communication, publicity, community
-                building, and guiding others in the matter of faith.
+            <div class="card-body text-center">
+              <h5 class="card-title">Tunde Rhema, leadership expert</h5>
+              <p class="card-text small text-muted">
+                Convener, Young Mother and Child Haven Foundation.
               </p>
-              <div class="d-flex">
-                <button
-                  type="button"
-                  class="btn btn-primary"
-                  data-bs-toggle="modal"
-                  data-bs-target="#card4Modal"
-                  id="heroBtn"
-                >
-                  Read More
-                </button>
-              </div>
-
-              <!-- Modal -->
-              <div
-                class="modal fade"
-                id="card4Modal"
-                tabindex="-1"
-                aria-labelledby="card4ModalLabel"
-                aria-hidden="true"
+              <button
+                class="btn btn-outline-primary"
+                data-bs-toggle="collapse"
+                data-bs-target="#bio1"
               >
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h1 class="modal-title fs-5" id="card4ModalLabel">
-                        Tunde Rhema
-                      </h1>
-                      <button
-                        type="button"
-                        class="btn-close"
-                        data-bs-dismiss="modal"
-                        aria-label="Close"
-                      ></button>
-                    </div>
-                    <div class="modal-body">
+                View Bio
+              </button>
+              <div class="collapse mt-2 text-start" id="bio1">
+                <p class="small">
+                 iv class="modal-body">
                       Tunder Rhema is a renowned leader with expertise in mental
                       health, leadership, communication, publicity, community
                       building, and guiding others in the matter of faith. He is
@@ -460,74 +323,36 @@
                       expert for Cerca Africa, a prestigious brand known for
                       providing strategies, processes, and coaching for
                       organisations and individuals. He is also a board member
-                      for Gold Dust executive leadership company
-                    </div>
-                    <div class="modal-footer">
-                      <button
-                        type="button"
-                        class="btn btn-secondary"
-                        data-bs-dismiss="modal"
-                      >
-                        Close
-                      </button>
-                    </div>
-                  </div>
-                </div>
+                      for Gold Dust executive leadership company.
+                </p>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-12 col-lg-6 mt-3 d-flex justify-content-center">
-          <div class="card w-100">
+
+        <br />
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="card h-100 shadow-sm border-0">
             <img
               src="./static/images/woman1.jpg"
-              class="card-img-top"
+              class="card-img-top img-fluid"
               alt="Oluwatoyin Falaiye, lawyer and advocate"
             />
-            <div class="card-body">
-              <h5 class="card-title">Oluwatoyin Falaiye</h5>
-              <p class="card-text">
-                Oluwatoyin Falaiye is a woman on Assignment whose journey
-                encompasses law, Gender Justice advocacy, writing, Trauma
-                Management, life coaching and Ministry Her work is rooted in her
-                profound commitment to healing, wholeness, and
-                purpose-discovery.
+            <div class="card-body text-center">
+              <h5 class="card-title">Oluwatoyin Falaiye, lawyer and advocate</h5>
+              <p class="card-text small text-muted">
+                Convener, Young Mother and Child Haven Foundation.
               </p>
-              <div class="d-flex">
-                <button
-                  type="button"
-                  class="btn btn-primary"
-                  data-bs-toggle="modal"
-                  data-bs-target="#card5Modal"
-                  id="heroBtn"
-                >
-                  Read More
-                </button>
-              </div>
-
-              <!-- Modal -->
-              <div
-                class="modal fade"
-                id="card5Modal"
-                tabindex="-1"
-                aria-labelledby="card5ModalLabel"
-                aria-hidden="true"
+              <button
+                class="btn btn-outline-primary"
+                data-bs-toggle="collapse"
+                data-bs-target="#bio1"
               >
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h1 class="modal-title fs-5" id="card5ModalLabel">
-                        Oluwatoyin Falaiye
-                      </h1>
-                      <button
-                        type="button"
-                        class="btn-close"
-                        data-bs-dismiss="modal"
-                        aria-label="Close"
-                      ></button>
-                    </div>
-                    <div class="modal-body">
-                      Oluwatoyin Falaiye is a woman on Assignment whose journey
+                View Bio
+              </button>
+              <div class="collapse mt-2 text-start" id="bio1">
+                <p class="small">
+                    Oluwatoyin Falaiye is a woman on Assignment whose journey
                       encompasses law, Gender Justice advocacy, writing, Trauma
                       Management, life coaching and Ministry Her work is rooted
                       in her profound commitment to healing, wholeness, and
@@ -542,25 +367,18 @@
                       space, psycho-social support and access to justice to
                       victims and survivors of sexual abuse and domestic
                       violence.offering advocacy, counselling, psychotherapy,
-                      and mental health services
-                    </div>
-                    <div class="modal-footer">
-                      <button
-                        type="button"
-                        class="btn btn-secondary"
-                        data-bs-dismiss="modal"
-                      >
-                        Close
-                      </button>
-                    </div>
-                  </div>
-                </div>
+                      and mental health services.
+                </p>
               </div>
             </div>
           </div>
         </div>
+        <br />
+
+        <!-- Add more cards by duplicating the card block above -->
       </div>
-    </div>
+    </section>
+
     <a name="about"></a>
     <div class="container mt-4">
       <div class="row g-3 justify-content-center">
@@ -642,7 +460,7 @@
           <div class="col-md-4 mb-4">
             <h5>About Our Foundation</h5>
             <p class="text-light">
-              The Young Women & Child Haven Foundation is dedicated to
+              The Young Mothers & Child Haven Foundation is dedicated to
               protecting, uplifting, and empowering vulnerable young women and
               children through education, healthcare, and life skills training.
             </p>
@@ -713,7 +531,7 @@
         <div class="row">
           <div class="col-md-6 text-center text-md-start">
             <p class="text-light mb-0">
-              &copy; 2023 Young Women & Child Haven Foundation. All rights
+              &copy; 2023 Young Mothers & Child Haven Foundation. All rights
               reserved.
             </p>
           </div>
